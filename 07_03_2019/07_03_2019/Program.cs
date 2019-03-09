@@ -26,16 +26,43 @@ namespace _07_03_2019
                        { Console.WriteLine($"{num2} is greater then {num1}"); }
             Console.ReadLine(); */
             //Task 2 //
-            Random rand = new Random();
-            int number = rand.Next(1, 11);
-            Console.WriteLine("Please guess a number between 1-10");
-            int user = int.Parse(Console.ReadLine());
-            
-            if (user > number)
-            { Console.WriteLine("Sorry but your guesss was to high")}
-            Console.ReadLine();
-            else (user == number)
 
+            Console.WriteLine("Welcome to Dans billion Doller give away");
+            Console.WriteLine("All you have to do is guess the right number and you win a billion dollers! (: ");
+            Console.WriteLine("Be warned though you only get one chance...");
+
+
+            int number = (1);
+            Console.WriteLine("Please guess a number between 0-11");
+            int user = int.Parse(Console.ReadLine());
+
+            string message = "";
+
+            if (user == number)
+            {
+                 message = ("CONGRATULATIONS! YOU HAVE WON A BILLION DOLLERS!");
+                
+            }
+
+            else if (user > number)
+            {
+                 message = ("sorry but your guess was to high.       ...GAME OVER...");
+                
+            }
+
+            else if (user < number)
+            {
+                 message = ("sorry but your guess was to low.         ...GAME OVER...");
+                
+            }
+            else 
+            {
+                 message = ("Sorry we did not understand that command");
+                
+            }
+            Console.WriteLine(message);
+            Console.ReadLine(); 
+            
 
 
             
